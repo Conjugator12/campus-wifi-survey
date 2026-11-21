@@ -1,4 +1,4 @@
-function MetricCard({ title, value }) {
+function MetricCard({ title, value, accent = "#0f172a" }) {
   return (
     <div
       style={{
@@ -11,9 +11,10 @@ function MetricCard({ title, value }) {
     >
       <h3
         style={{
-          marginBottom: "8px",
-          color: "#0f172a",
-          fontSize: "24px",
+          margin: "0 0 6px",
+          color: accent,
+          fontSize: "22px",
+          fontWeight: "700",
         }}
       >
         {value}
@@ -21,8 +22,9 @@ function MetricCard({ title, value }) {
 
       <p
         style={{
+          margin: 0,
           color: "#64748b",
-          fontSize: "14px",
+          fontSize: "13px",
         }}
       >
         {title}
